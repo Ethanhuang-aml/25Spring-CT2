@@ -6,14 +6,14 @@ header nav ul{
     padding-left: 17px; /* 控制 ul 和左边界的距离 */
     display:flex;
     justify-content: flex-start;/*靠左对齐*/
-    background-color: rgb(0, 0, 0);
+    background-color: rgb(255, 100, 229);
     font-family: Verdana, Geneva, Tahoma, sans-serif;
   }
   
   header nav li{
     display: flex;
     padding:10px;
-    font-size:23px;
+    font-size:28px;
     text-decoration: none;  
   
   }
@@ -26,14 +26,7 @@ header nav ul{
   main {
     background-color: rgb(255, 255, 255);
   
-    /* background-image: url('../img/5.gif'); 
-    设置背景图片
-    background-size: cover; 
-    让背景图片自动调整大小，填充整个容器
-    background-position: center; 
-    使背景图片居中
-    background-repeat: no-repeat; 
-    不让背景图片重复 */
+
   
     display: flex;
     justify-content: center;
@@ -43,6 +36,8 @@ header nav ul{
     text-align: center;
     flex-direction: column;
     margin-bottom: 85px;
+    font-size:22px;
+
     
   }
   img {
@@ -59,3 +54,13 @@ header nav ul{
     display: block; /* 避免内联元素的间距问题 */
     margin: 0 auto; /* 居中对齐 */
   }
+
+  .bold-text {
+    font-weight: bold;
+}
+
+
+p {
+  width: 70%; /* 让文字宽度保持 80% */
+  margin: 20px auto; /* 上下 20px，左右自动居中 */
+}

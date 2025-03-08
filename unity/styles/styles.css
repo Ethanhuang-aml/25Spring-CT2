@@ -6,7 +6,7 @@ header nav ul{
     padding-left: 17px; /* 控制 ul 和左边界的距离 */
     display:flex;
     justify-content: flex-start;/*靠左对齐*/
-    background-color: rgb(255, 100, 229);
+    background-color: rgb(151, 88, 0);
     font-family: Verdana, Geneva, Tahoma, sans-serif;
   }
   

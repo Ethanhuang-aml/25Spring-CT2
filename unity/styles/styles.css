@@ -22,6 +22,10 @@ header nav ul{
     text-decoration: none;
     color:#ffffff;
   }
+
+  nav ul li {
+    margin-right: 20px; /* 调整间距 */
+}
   
   main {
     background-color: rgb(255, 255, 255);

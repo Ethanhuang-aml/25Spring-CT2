@@ -52,19 +52,30 @@ header nav ul{
     margin: 0 auto; /* 居中对齐图片 */
   }
   
-  img[src$=".gif"] {
-    width: 100%; /* 或者指定固定的宽度，例如 500px */
-    height: auto; /* 保持比例 */
-    display: block; /* 避免内联元素的间距问题 */
-    margin: 0 auto; /* 居中对齐 */
-  }
+
+   
+  
 
   .bold-text {
     font-weight: bold;
 }
 
 
-p {
-  width: 80%; /* 让文字宽度保持 80% */
-  margin: 20px auto; /* 上下 20px，左右自动居中 */
+.p1 {
+  width: 75%;
+  margin: 20px auto;
+  text-align: center;
 }
+
+.p2 {
+  width: 75%;
+  margin: 20px auto;
+  text-align: left;
+}
+
+img.space {
+  display: block;
+  margin: 20px auto; /* 上下 20px 空白，左右居中 */
+  width: 75%;
+}
+

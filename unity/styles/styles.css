@@ -73,9 +73,7 @@ header nav ul{
   text-align: left;
 }
 
-img.space {
-  display: block;
-  margin: 20px auto; /* 上下 20px 空白，左右居中 */
-  width: 75%;
+.section {
+  margin-bottom: 100px; /* 控制“段落 + 图片”单元之间的空隙 */
 }
 

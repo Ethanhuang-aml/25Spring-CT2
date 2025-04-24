@@ -53,7 +53,10 @@ header nav ul{
   }
   
 
-   
+  section {
+    margin-bottom: 150px; /* 或者你想要的其他间距值 */
+  }
+  
   
 
   .bold-text {

@@ -60,7 +60,23 @@ header nav ul{
 }
 
 
-p {
-  width: 70%; /* 让文字宽度保持 80% */
-  margin: 20px auto; /* 上下 20px，左右自动居中 */
+section {
+  margin-bottom: 150px; /* 或者你想要的其他间距值 */
+}
+
+
+.p1 {
+  width: 75%;
+  margin: 20px auto;
+  text-align: center;
+}
+
+.p2 {
+  width: 75%;
+  margin: 20px auto;
+  text-align: left;
+}
+
+.section {
+  margin-bottom: 100px; /* 控制“段落 + 图片”单元之间的空隙 */
 }

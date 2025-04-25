@@ -42,11 +42,11 @@
                     </span>
                 </p>
                 <p class="p2">
-                    In modeling the snowy mountain, I first reshaped the terrain, then applied a marble texture across the entire surface. Next, I painted a snow texture on the top, followed by a soil texture at the base of the mountain. Finally, I added patches of grass texture to create smooth transitions between the different layers.
+                    Use the Terrain tool in Unity to create an uneven landscape, making the game more challenging.
                 </p>
                 <img src="pic/1.png" alt="1">
                 <p class="p2">
-                    In modeling the snowy mountain, I first reshaped the terrain, then applied a marble texture across the entire surface. Next, I painted a snow texture on the top, followed by a soil texture at the base of the mountain. Finally, I added patches of grass texture to create smooth transitions between the different layers.
+                    Find a suitable airplane model from the Unity Asset Store and place it at the designated starting point of the game.
                 </p>
                 <img src="pic/2.png" alt="2">
                 </div>
@@ -54,73 +54,81 @@
 
             <div class="section">
             <p class="p1">
-                <span class="bold-text">2. The first version of the volcano (without lava)
+                <span class="bold-text">2. Create a coin model and place it in suitable positions
                 </span>
             </p>
             <p class="p2">
-                The volcano model was created using the same method. The difference lies in that the entire volcano is composed of a marble texture. Additionally, various bumps and depressions were sculpted on the surface to enhance realism and better accommodate the lava that would be added later.
+                Create a coin model in Blender using a cylinder, and import it into Unity.
             </p>
-            <img src="pic/3.png" alt="volcano">
+            <img src="pic/3.png" alt="coin">
+            <p class="p2">
+                Place the coins sequentially along the flight path in Unity, with varying heights to increase the game's difficulty.
+            </p>
+            <img src="pic/4.png" alt="coin">
             </div>
 
-            
+
             <div class="section">
             <p class="p1">
-                <span class="bold-text">3. Meadow</span>
+                <span class="bold-text">3. Paint the terrain with different textures</span>
             </p>
             <p class="p2">
-                The construction of the meadow was relatively simple due to its less complex terrain. I painted it using soil and various grass textures, and added more grass models to enhance the overall detail.
+                Based on the terrain variations, paint different parts with different textures — for example, snow on higher elevations, grass in the middle, and soil at the bottom.
             </p>
-            <img src="pic/4.png" alt="grass">
+            <img src="pic/5.png" alt="5">
             </div>
 
             <div class="section">
             <p class="p1">
-                <span class="bold-text">4. Waterfall and lake</span>
+                <span class="bold-text">4. Create scripts with different functionalities</span>
             </p>
             <p class="p2">
-                By altering the shape of the terrain, I created a waterfall and a lake, preparing them for the addition of water materials later on.
-            </p>
-            <img src="pic/5.png" alt="river">
-
-            <img src="pic/6.png" alt="river">
-            </div>
-
-            <div class="section">
-            <p class="p1">
-                <span class="bold-text">5. Add a water layer</span>
+                CameraFollow: Controls the camera to always follow the airplane.
             </p>
             <p class="p2">
-                I found a suitable water model on the Unity Asset Store (the lava was also sourced from there) and adjusted the terrain's elevation details to ensure a seamless fit between the terrain and the water.
-            </p>
-            <img src="pic/7.png" alt="river">
-            </div>
-
-
-            <div class="section">
-            <p class="p1">
-                <span class="bold-text">6. Add trees</span>
+                Coin: When the airplane collides with a coin's collider, the coin disappears.
             </p>
             <p class="p2">
-                Selected tree trunk models were added to the small hills around the waterfall and lake, enhancing the scene with a more eerie and dreamlike atmosphere.
-            </p>
-            <img src="pic/8.png" alt="tress">
-            </div>
-
-            <div class="section">
-            <p class="p1">
-                <span class="bold-text">6. Add lava</span>
+                GameManager: Manages the scoring system — each time a coin is collected, the score in the top-left corner of the screen increases by one.
             </p>
             <p class="p2">
-                The lava model was trimmed and scaled according to the shape of the volcano to ensure a perfect fit. Additionally, suitable lava rock models were placed at the base of the volcano to enhance the level of detail.
+                PlaneController: The core script of the game. Each wing of the airplane has an empty object that provides upward lift and forward thrust when triggered. Additionally, there is another empty object at the nose of the plane that provides balancing force to counteract the lift from the rear and prevent the plane from flipping. This script also includes a module to adjust the airplane's center of gravity.
             </p>
-            <img src="pic/9.png" alt="lava">
-            <img src="pic/10.png" alt="lava">
+            <p class="p2">
+                SensorInputController: Used to control the airplane based on input from the hardware in later stages.
+            </p>
+            <img src="pic/6.5.png" alt="6.5">
+            <p class="p2">
+                During the test where the plane is controlled via the keyboard, everything worked smoothly. The plane could fly properly using the "A" and "L" keys. Everything is ready for hardware integration.
+            </p>
+            <img src="pic/6.png" alt="6">
+            </div>
+
+
+            <div class="section">
+            <p class="p1">
+                <span class="bold-text">5. Failed sensor attempts</span>
+            </p>
+            <p class="p2">
+                After purchasing and assembling two distance sensors, it was discovered that they could not effectively transmit data. Due to some fixed internal configurations of the sensors, interface issues occurred, making them unusable.
+            </p>
+            <img src="pic/7.jpg" alt="7">
             </div>
 
             <div class="section">
             <p class="p1">
-                <span class="bold-text">6. Add a "Jupiter" skybox</span>
+                <span class="bold-text">6. Successful sensor attempt</span>
+            </p>
+            <p class="p2">
+                The distance sensor was replaced, but it was found to operate at 5V. Therefore, the main board was also replaced with an Arduino Uno, which supports 5V operation. After testing, everything worked fine, and the sensor can now be integrated into Unity.
+            </p>
+            <img src="pic/8.jpg" alt="8">
+            <iframe width="1000" height="600" src="https://youtube.com/shorts/M7zIp1jfXt0?si=BX8RzVPo8KHX5Oh8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+
+            <div class="section">
+            <p class="p1">
+                <span class="bold-text">7. Add a "Jupiter" skybox</span>
             </p>
             <p class="p2">
                 Finally, I selected a suitable HDRI image from the Poliigon website. I chose a Jupiter-themed background to place the entire scene in outer space, giving it a more magical and surreal atmosphere.
